@@ -9,13 +9,13 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/myStyle.css">
-    <script src="js/editor/ckeditor.js"></script>
 
-    <title>Apoio Noc</title>
+    <title>AMSList
+    </title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <a onclick="changePage('pages/home.php')" class="navbar-brand" href="#">
+    <nav class="navbar navbar-expand-lg navbar-light bg-secondary">
+    <a onclick="changePage('index.php')" class="navbar-brand" href="#">
             <img src="img/tv.png" width="70" height="55" class="d-inline-block align-top" alt="">
             
         </a>
@@ -24,18 +24,16 @@
     </button>
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="nav text-light mr-auto">
-        <li class="nav-item ">
-            <a onclick="changePage('pages/passagens.php')" class="nav-link menu-hover" href="#">Mangas<span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-            <a onclick="changePage('pages/ferramentas.html')" class="nav-link menu-hover" href="#">Animes</a>
-        </li>  
-        <li class="nav-item">
-            <a onclick="changePage('pages/ferramentas.html')" class="nav-link menu-hover" href="#">Séries</a>
-        </li>  
-       
-        
+        <ul class="nav nav-pills mr-auto text-dark" id="pills-tab" role="tablist">
+            <li class="nav-item ">
+                <a class="nav-link active" id="pills-mangas-tab" data-toggle="pill" href="#pills-mangas" role="tab" aria-controls="pills-mangas" aria-selected="true">Mangas</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="pills-animes-tab" data-toggle="pill" href="#pills-animes" role="tab" aria-controls="pills-animes" aria-selected="false">Animes</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="pills-series-tab" data-toggle="pill" href="#pills-series" role="tab" aria-controls="pills-series" aria-selected="false">Séries</a>
+            </li>
         </ul>
         <form class="form-inline mr-3" action="db/pageSearch.php" method="POST" target="frame">
             <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" name="searchWord">
@@ -56,8 +54,17 @@
     </div>
     </nav>
     
-    <body>
-        <img src="img/tv.png" alt="">
-    </body>
 
+    <div class="tab-content" id="pills-tabContent">
+        <div class="tab-pane fade show active" id="pills-mangas" role="tabpanel" aria-labelledby="pills-mangas-tab"><?php include_once('db/mangas.php')?></div>
+        <div class="tab-pane fade" id="pills-animes" role="tabpanel" aria-labelledby="pills-animes-tab"><?php include_once('db/animes.php')?></div>
+        <div class="tab-pane fade" id="pills-series" role="tabpanel" aria-labelledby="pills-series-tab"><?php include_once('db/series.php')?></div>
+    </div>
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    </body>
 </html>
