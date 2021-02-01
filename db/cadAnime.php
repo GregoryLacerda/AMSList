@@ -13,8 +13,9 @@ if ($_POST) {
     $episodio = $_POST['epAnime'];
     $nomeLink = $_POST['nlinkAnime'];
     $link = $_POST['linkAnime'];
+    $stats = $_POST['statsAnime'];
 
-    $sql = 'INSERT INTO amsdb.animes (nome, temporada, episodio, link, nlink) VALUES (:nome, :temporada, :episodio, :link, :nlink);';
+    $sql = 'INSERT INTO amsdb.animes (nome, temporada, episodio, link, nlink, stats) VALUES (:nome, :temporada, :episodio, :link, :nlink, :stats);';
 
     $stmt = $con->prepare($sql);
 
@@ -23,6 +24,7 @@ if ($_POST) {
     $stmt->bindValue(':episodio',$episodio);
     $stmt->bindValue(':link',$link);
     $stmt->bindValue(':nlink',$nomeLink);
+    $stmt->bindValue(':stats',$stats);
 
     $stmt->execute();
 

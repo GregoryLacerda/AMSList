@@ -100,10 +100,20 @@
                                 <input type="text" class="form-control" id="link-anime" name="linkAnime" required>                      
                             </div>
                         </div> 
-                        <div class="form-group">
-                            <label for="img-anime">Imagem</label>
-                            <input type="file" class="form-control-file" id="img-anime" name="imgAnime">
-                        </div>                                         
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="img-anime">Imagem</label>
+                                <input type="file" class="form-control-file" id="img-anime" name="imgAnime">
+                            </div>           
+                            <div class="form-group col-md-6">
+                                <label for="statsAnime">Status</label>
+                                <select class="form-control" id="statsAnime" name="statsAnime">
+                                <option>Watching</option>
+                                <option>Completed</option>
+                                <option>Dropped</option>
+                                </select>
+                            </div>
+                        </div> 
                     </div>
                     <div class="modal-footer">
                         <button type="submit" class="btn btn-success">Salvar</button>
