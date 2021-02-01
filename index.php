@@ -92,7 +92,7 @@
                         <div class="form-row">
                             <div class="form-group col-md-6">
                                 <label for="nlink-anime">Nome do link:</label>
-                                <input type="text" class="form-control" id="nlnik-anime" name="nlnikAnime" required>                      
+                                <input type="text" class="form-control" id="nlink-anime" name="nlinkAnime" required>                      
                             </div>
 
                             <div class="form-group col-md-6">
@@ -140,7 +140,7 @@
                         <div class="form-row">
                             <div class="form-group col-md-6">
                                 <label for="nlink-manga">Nome do link:</label>
-                                <input type="text" class="form-control" id="nlnik-manga" name="nlnikManga" required>                      
+                                <input type="text" class="form-control" id="nlink-manga" name="nlinkManga" required>                      
                             </div>
 
                             <div class="form-group col-md-6">
@@ -193,7 +193,7 @@
                         <div class="form-row">
                             <div class="form-group col-md-6">
                                 <label for="nlink-serie">Nome do link:</label>
-                                <input type="text" class="form-control" id="nlnik-serie" name="nlnikSerie" required>                      
+                                <input type="text" class="form-control" id="nlink-serie" name="nlinkSerie" required>                      
                             </div>
 
                             <div class="form-group col-md-6">
