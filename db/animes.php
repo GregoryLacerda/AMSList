@@ -22,9 +22,10 @@ foreach ($dados as $row) {
             
             </div>
             <div class="col-md-8">
-                <a href="#" class="float-right" data-toggle="modal" data-target="#attanime" data-id="'.$row['id'].'" data-nome="'.$row['nome'].'" data-temp="'.$row['temporada'].'" data-epi="'.$row['episodio'].'" data-nlk="'.$row['nlink'].'" data-lk="'.$row['link'].'" data-imag="img/'.$row['nome'].'.jpg" data-stats="'.$row['stats'].'">               
-                    <img src="../img/editicon.png" alt="">
+                <a href="#" class="float-right" data-toggle="modal" data-target="#attanime" data-idA="'.$row['id'].'" data-nome="'.$row['nome'].'" data-temp="'.$row['temporada'].'" data-epi="'.$row['episodio'].'" data-nlk="'.$row['nlink'].'" data-lk="'.$row['link'].'" data-imag="img/'.$row['nome'].'.jpg" data-stats="'.$row['stats'].'">               
+                    <img src="../img/editicon.png" alt="Atualizar">
                 </a>
+                <a href="#" class="float-right" data-toggle="modal" data-target="#delanime" data-id="'.$row['id'].'"><img style="margin-top:5px" src="../img/delete.png" alt="Apagar" width=24 heght=24></a>
                 <div class="card-body">
                     <h5 class="card-title">'.$row['nome'].'</h5>
                     <hr>
@@ -47,14 +48,14 @@ foreach ($dados as $row) {
 
 ?>
 
-
+<a href=""></a>
 <!-- Modal att Animes-->
 
 <div class="modal fade" id="attanime" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="animeLabel">Adicionar Anime</h5>
+                <h5 class="modal-title" id="animeLabel">Atualizar Anime</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
                 </button>
@@ -88,11 +89,7 @@ foreach ($dados as $row) {
                             <input type="text" class="form-control" id="linkAnime" name="linkAnime" required>                      
                         </div>
                     </div> 
-                    <div class="form-row">
-                        <div class="form-group col-md-6">
-                            <label for="img-anime">Imagem</label>
-                            <input type="file" class="form-control-file" id="imgAnime" name="imgAnime" >
-                        </div>           
+                    <div class="form-row">                              
                         <div class="form-group col-md-6">
                             <label for="statsAnime">Status</label>
                             <select class="form-control" id="statsAnime" name="sttsAnime">
@@ -116,7 +113,34 @@ foreach ($dados as $row) {
     </div>
 </div>
 
+<!-- Delete Modal --> 
+<div class="modal fade" id="delanime" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-sm" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="animLabel">Excluir Anime</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <form class="" action="../db/delAnime.php" method="post" enctype="multipart/form-data">
+                <div class="modal-body">
 
+                 
+                    Deseja excluir este anime?
+                    <div class="form-group">
+                        <input type="hidden" class="form-control" id="idAnime" name="idAnime" required>
+                    </div>
+                    
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-success">Confirmar</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                </div>                                            
+            </form>                   
+        </div>
+    </div>
+</div>
     <!--
     <div class="card mt-3 ml-3 mb-3 d-inline-block" style="max-width: 420px;">
         <div class="row no-gutters">
@@ -135,4 +159,3 @@ foreach ($dados as $row) {
         </div>
     </div>
     -->
-

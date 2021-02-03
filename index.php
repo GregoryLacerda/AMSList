@@ -230,35 +230,8 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="js/bootstrap.min.js"></script>
-
-
-    
-    <script>
-    //script para passar as informações para o modal de atualização
-        $('#attanime').on('show.bs.modal', function (event) {
-            var button = $(event.relatedTarget) // Button that triggered the modal
-            var id = button.data('id') 
-            var nome = button.data('nome') 
-            var temp = button.data('temp') 
-            var epi = button.data('epi') 
-            var nlk = button.data('nlk') 
-            var lk = button.data('lk') 
-            //var imag = button.data('imag') 
-            var stats = button.data('stats')
-            
-            var modal = $(this)
-            
-            modal.find('#idAnime').val(id)
-            modal.find('#nomeAnime').val(nome)
-            modal.find('#tempAnime').val(temp)
-            modal.find('#epAnime').val(epi)
-            modal.find('#nlinkAnime').val(nlk)
-            modal.find('#linkAnime').val(lk)
-            //modal.find('#imgAnime').val(imag)
-            modal.find('#sttsAnime').val(status)
-        })
-
-    </script>
+ 
+    <script src="js/scripts.js"></script>
     
     </body>
 </html>
