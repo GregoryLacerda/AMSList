@@ -22,7 +22,7 @@ foreach ($dados as $row) {
             
             </div>
             <div class="col-md-8">
-                <a href="#" class="float-right" data-toggle="modal" data-target="#attanime" data-idA="'.$row['id'].'" data-nome="'.$row['nome'].'" data-temp="'.$row['temporada'].'" data-epi="'.$row['episodio'].'" data-nlk="'.$row['nlink'].'" data-lk="'.$row['link'].'" data-imag="img/'.$row['nome'].'.jpg" data-stats="'.$row['stats'].'">               
+                <a href="#" class="float-right" data-toggle="modal" data-target="#attanime" data-id="'.$row['id'].'" data-nome="'.$row['nome'].'" data-temp="'.$row['temporada'].'" data-epi="'.$row['episodio'].'" data-nlk="'.$row['nlink'].'" data-lk="'.$row['link'].'" data-imag="img/'.$row['nome'].'.jpg" data-stats="'.$row['stats'].'">               
                     <img src="../img/editicon.png" alt="Atualizar">
                 </a>
                 <a href="#" class="float-right" data-toggle="modal" data-target="#delanime" data-id="'.$row['id'].'"><img style="margin-top:5px" src="../img/delete.png" alt="Apagar" width=24 heght=24></a>
@@ -60,7 +60,7 @@ foreach ($dados as $row) {
                 <span aria-hidden="true">&times;</span>
                 </button>
             </div>
-            <form class="" action="db/attAnime.php" method="post" enctype="multipart/form-data">
+            <form class="" action="db/attAnimes.php" method="post" enctype="multipart/form-data">
                 <div class="modal-body">
                     
                     <div class="form-group">

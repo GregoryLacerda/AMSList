@@ -6,7 +6,7 @@
 $('#attanime').on('show.bs.modal', function (event) {
 
     var button = $(event.relatedTarget) // Button that triggered the modal
-    var id = button.data('idA') 
+    var id = button.data('id') 
     var nome = button.data('nome') 
     var temp = button.data('temp') 
     var epi = button.data('epi') 
@@ -17,7 +17,7 @@ $('#attanime').on('show.bs.modal', function (event) {
 
     var modal = $(this)
 
-    modal.find('#idAnime').val(id)
+    modal.find('#id-anime').val(id)
     modal.find('#nomeAnime').val(nome)
     modal.find('#tempAnime').val(temp)
     modal.find('#epAnime').val(epi)
