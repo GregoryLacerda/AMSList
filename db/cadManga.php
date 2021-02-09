@@ -7,21 +7,19 @@ include_once("Connect.php");
     
 if ($_POST) {
 
+    $nome = $_POST['nomeManga'];
+    $capitulo = $_POST['capManga'];
+    $nomeLink = $_POST['nlinkManga'];
+    $link = $_POST['linkManga'];
+    $stats = $_POST['statsManga'];
 
-    $nome = $_POST['nomeAnime'];
-    $temporada = $_POST['tempAnime'];
-    $episodio = $_POST['epAnime'];
-    $nomeLink = $_POST['nlinkAnime'];
-    $link = $_POST['linkAnime'];
-    $stats = $_POST['statsAnime'];
 
-    $sql = 'INSERT INTO amsdb.animes (nome, temporada, episodio, link, nlink, stats) VALUES (:nome, :temporada, :episodio, :link, :nlink, :stats);';
+    $sql = 'INSERT INTO amsdb.mangas (nome, capitulo, link, nlink, stats) VALUES (:nome, :capitulo, :link, :nlink, :stats);';
 
     $stmt = $con->prepare($sql);
 
     $stmt->bindValue(':nome',$nome);
-    $stmt->bindValue(':temporada',$temporada);
-    $stmt->bindValue(':episodio',$episodio);
+    $stmt->bindValue(':capitulo',$capitulo);
     $stmt->bindValue(':link',$link);
     $stmt->bindValue(':nlink',$nomeLink);
     $stmt->bindValue(':stats',$stats);
@@ -29,12 +27,12 @@ if ($_POST) {
     $stmt->execute();
 
     //upload da imagem
-    $ext = strtolower(substr($_FILES['imgAnime']['name'],-4)); //Pegando extensão do arquivo
+    $ext = strtolower(substr($_FILES['imgManga']['name'],-4)); //Pegando extensão do arquivo
     $nome = preg_replace( array( '/[ ]/' , '/[^A-Za-z0-9\-]/' ) , array( '' , '' ) , $nome );
     $new_name = $nome. $ext; //Definindo um novo nome para o arquivo
     $nome = $new_name;
-    $dir = '../img/animes/'; //Diretório para uploads 
-    move_uploaded_file($_FILES['imgAnime']['tmp_name'], $dir.$new_name); //Fazer upload do arquivo
+    $dir = '../img/mangas/'; //Diretório para uploads 
+    move_uploaded_file($_FILES['imgManga']['tmp_name'], $dir.$new_name); //Fazer upload do arquivo
     echo("Imagen enviada com sucesso!");
 
     if ($stmt) {

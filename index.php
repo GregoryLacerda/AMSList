@@ -137,14 +137,14 @@
                 </div>
                 <form class="" action="db/cadManga.php" method="post" enctype="multipart/form-data">
                     <div class="modal-body">
-                        <div class="form-group">
-                            <label for="nome-manga" class="col-form-label">Nome do Manga:</label>
-                            <input type="text" class="form-control" id="nome-manga" name="nomeManga" required>
-                        </div>       
                         <div class="form-row">
-                                <div class="form-group col-md-6">
-                                <label for="ep-manga">Capitulo:</label>
-                                <input type="number" class="form-control" id="ep-manga" name="epManga" required>                      
+                            <div class="form-group col-md-6">
+                                <label for="nome-manga" class="col-form-label">Nome do Manga:</label>
+                                <input type="text" class="form-control" id="nome-manga" name="nomeManga" required>
+                            </div>       
+                            <div class="form-group col-md-6">
+                                <label for="cap-manga">Capitulo:</label>
+                                <input type="number" class="form-control" id="cap-manga" name="capManga" required>                      
                             </div>
                         </div>     
                         <div class="form-row">
@@ -158,10 +158,20 @@
                                 <input type="text" class="form-control" id="link-manga" name="linkManga" required>                      
                             </div>
                         </div> 
-                        <div class="form-group">
-                            <label for="img-manga">Imagem</label>
-                            <input type="file" class="form-control-file" id="img-manga" name="imgManga">
-                        </div>                                         
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="img-manga">Imagem</label>
+                                <input type="file" class="form-control-file" id="img-manga" name="imgManga">
+                            </div>           
+                            <div class="form-group col-md-6">
+                                <label for="statsManga">Status</label>
+                                <select class="form-control" id="statsManga" name="statsManga">
+                                <option>Reading</option>
+                                <option>Completed</option>
+                                <option>Dropped</option>
+                                </select>
+                            </div>
+                        </div>                                   
                     </div>
                     <div class="modal-footer">
                         <button type="submit" class="btn btn-success">Salvar</button>
