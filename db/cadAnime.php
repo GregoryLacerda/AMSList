@@ -30,9 +30,10 @@ if ($_POST) {
 
     //upload da imagem
     $ext = strtolower(substr($_FILES['imgAnime']['name'],-4)); //Pegando extensão do arquivo
+    $nome = preg_replace( array( '/[ ]/' , '/[^A-Za-z0-9\-]/' ) , array( '' , '' ) , $nome );
     $new_name = $nome. $ext; //Definindo um novo nome para o arquivo
     $nome = $new_name;
-    $dir = '../img/'; //Diretório para uploads 
+    $dir = '../img/animes/'; //Diretório para uploads 
     move_uploaded_file($_FILES['imgAnime']['tmp_name'], $dir.$new_name); //Fazer upload do arquivo
     echo("Imagen enviada com sucesso!");
 
