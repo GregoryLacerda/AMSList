@@ -24,10 +24,10 @@ foreach ($dados as $row) {
             
             </div>
             <div class="col-md-8">
-                <a href="#" class="float-right" data-toggle="modal" data-target="#attManga" data-id="'.$row['id'].'" data-nome="'.$row['nome'].'" data-cap="'.$row['capitulo'].'" data-nlk="'.$row['nlink'].'" data-lk="'.$row['link'].'" data-stats="'.$row['stats'].'">               
+                <a href="#" class="float-right" data-toggle="modal" data-target="#attmanga" data-idm="'.$row['id'].'" data-nomem="'.$row['nome'].'" data-capm="'.$row['capitulo'].'" data-nlkm="'.$row['nlink'].'" data-lkm="'.$row['link'].'" data-statsm="'.$row['stats'].'">               
                     <img src="../img/editicon.png" alt="Atualizar">
                 </a>
-                <a href="#" class="float-right" data-toggle="modal" data-target="#delManga" data-id="'.$row['id'].'"><img style="margin-top:5px" src="../img/delete.png" alt="Apagar" width=24 heght=24></a>
+                <a href="#" class="float-right" data-toggle="modal" data-target="#delmanga" data-idm="'.$row['id'].'"><img style="margin-top:5px" src="../img/delete.png" alt="Apagar" width=24 heght=24></a>
                 <div class="card-body">
                     <h5 class="card-title">'.$row['nome'].'</h5>
                     <hr>
@@ -52,7 +52,7 @@ foreach ($dados as $row) {
 
 <!-- Modal att Mangas-->
 
-<div class="modal fade" id="attManga" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+<div class="modal fade" id="attmanga" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
             <div class="modal-header">
@@ -61,44 +61,42 @@ foreach ($dados as $row) {
                 <span aria-hidden="true">&times;</span>
                 </button>
             </div>
-            <form class="" action="db/attMangas.php" method="post" enctype="multipart/form-data">
-                <div class="modal-body">
-                    
+            <form class="" action="db/attMangas.php" method="post">
+                <div class="modal-body">                    
                     <div class="form-row">
                         <div class="form-group col-md-6">
-                            <label for="nome-manga" class="col-form-label">Nome do Manga:</label>
-                            <input type="text" class="form-control" id="nome-manga" name="nomemanga" required>
+                            <label for="nomeManga" class="col-form-label">Nome do Manga:</label>
+                            <input type="text" class="form-control" id="nomemanga" name="nomemanga" required>
                         </div>       
                         <div class="form-group col-md-6">
-                            <label for="cap-manga">Capitulo:</label>
-                            <input type="number" class="form-control" id="cap-manga" name="capmanga" required>                      
+                            <label for="capManga">Capitulo:</label>
+                            <input type="number" class="form-control" id="capmanga" name="capmanga" required>                      
                         </div>
                     </div>     
                     <div class="form-row">
                         <div class="form-group col-md-6">
-                            <label for="nlink-manga">Nome do link:</label>
-                            <input type="text" class="form-control" id="nlink-manga" name="nlinkmanga" required>                      
+                            <label for="nlinkManga">Nome do link:</label>
+                            <input type="text" class="form-control" id="nlinkmanga" name="nlinkmanga" required>                      
                         </div>
-
                         <div class="form-group col-md-6">
-                            <label for="link-manga">Link:</label>
-                            <input type="text" class="form-control" id="link-manga" name="linkmanga" required>                      
+                            <label for="linkManga">Link:</label>
+                            <input type="text" class="form-control" id="linkmanga" name="linkmanga" required>                      
                         </div>
                     </div> 
                     <div class="form-row">                              
                         <div class="form-group col-md-6">
-                            <label for="stats-manga">Status</label>
-                            <select class="form-control" id="stats-manga" name="sttsmanga">
+                            <label for="statsManga">Status</label>
+                            <select class="form-control" id="statsmanga" name="sttsmanga">
                             <option>Watching</option>
                             <option>Completed</option>
                             <option>Dropped</option>
                             </select>
                         </div>
-                         
+                        <div class="form-group col-md-6">
+                            <input type="hidden" class="form-control" id="idmanga" name="idmanga" required>
+                        </div>      
                     </div> 
-                    <div class="form-group">
-                        <input type="hidden" class="form-control" id="id-manga" name="idmanga" required>
-                    </div>  
+                    
                 </div>
                 <div class="modal-footer">
                     <button type="submit" class="btn btn-success">Atualizar</button>

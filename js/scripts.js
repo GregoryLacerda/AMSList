@@ -1,7 +1,4 @@
 
-
-
-
 // script para passar informações para o modal de att anime
 $('#attanime').on('show.bs.modal', function (event) {
 
@@ -37,5 +34,42 @@ $('#delanime').on('show.bs.modal', function (event) {
     var modal = $(this)
 
     modal.find('#idAnime').val(id)
+
+})
+
+
+
+
+$('#attmanga').on('show.bs.modal', function(event){
+
+    var buttonm = $(event.relatedTarget)
+    var idm = buttonm.data('idm')
+    var nomem = buttonm.data('nomem')
+    var capm = buttonm.data('capm')
+    var nlkm = buttonm.data('nlkm')
+    var lkm = buttonm.data('lkm')
+    var statsm = buttonm.data('statsm')
+
+    var modalm = $(this)
+
+    modalm.find('#idmanga').val(idm)
+    modalm.find('#nomemanga').val(nomem)
+    modalm.find('#capmanga').val(capm)
+    modalm.find('#nlinkmanga').val(nlkm)
+    modalm.find('#linkmanga').val(lkm)
+    modalm.find('statsmanga').val(statsm)
+    
+})
+
+
+$('#delmanga').on('show.bs.modal', function(event){
+
+    var button = $(event.relatedTarget)
+
+    var id = button.data('idm')
+
+    var modal = $(this)
+
+    modal.find('#idmanga').val(id)
 
 })
