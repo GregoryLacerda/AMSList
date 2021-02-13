@@ -37,8 +37,7 @@ $('#delanime').on('show.bs.modal', function (event) {
 
 })
 
-
-
+//script para passar informações para o modal de att Manga
 
 $('#attmanga').on('show.bs.modal', function(event){
 
@@ -61,6 +60,7 @@ $('#attmanga').on('show.bs.modal', function(event){
     
 })
 
+//script para passar informações para o modal de delete Manga
 
 $('#delmanga').on('show.bs.modal', function(event){
 
@@ -71,5 +71,45 @@ $('#delmanga').on('show.bs.modal', function(event){
     var modal = $(this)
 
     modal.find('#idmanga').val(id)
+
+})
+
+
+//script para passar informações para o modal de att serie
+$('#attserie').on('show.bs.modal', function(event){
+
+    var button = $(event.relatedTarget)
+
+    var id = button.data('id')
+    var nome = button.data('nome')
+    var temp = button.data('temp')
+    var ep = button.data('epi')
+    var nlk = button.data('nlk')
+    var lk = button.data('lk')
+    var stats = button.data('stats')
+
+    var modal = $(this)
+
+    modal.find('#idserie')
+    modal.find('#nomeserie').val(nome)
+    modal.find('#tempserie').val(temp)
+    modal.find('#epserie').val(ep)
+    modal.find('#nlinkserie').val(nlk)
+    modal.find('#linkserie').val(lk)
+    modal.find('#sttsserie').val(stats)
+
+})
+
+//script para passar informações para o modal de delete serie
+
+$('#delserie').on('show.bs.modal', function(event){
+
+    var button = $(event.relatedTarget)
+
+    var id = button.data('id')
+
+    var modal = $(this)
+
+    modal.find('#idserie').val(id)
 
 })

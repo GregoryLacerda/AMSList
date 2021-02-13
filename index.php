@@ -221,10 +221,20 @@
                                 <input type="text" class="form-control" id="link-serie" name="linkSerie" required>                      
                             </div>
                         </div> 
-                        <div class="form-group">
-                            <label for="img-serie">Imagem</label>
-                            <input type="file" class="form-control-file" id="img-serie" name="imgSerie">
-                        </div>                                         
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="img-serie">Imagem</label>
+                                <input type="file" class="form-control-file" id="img-serie" name="imgSerie">
+                            </div>   
+                            <div class="form-group col-md-6">
+                                    <label for="statsSerie">Status</label>
+                                    <select class="form-control" id="statsSerie" name="statsSerie">
+                                    <option>Reading</option>
+                                    <option>Completed</option>
+                                    <option>Dropped</option>
+                                    </select>
+                            </div>        
+                        </div>                               
                     </div>
                     <div class="modal-footer">
                         <button type="submit" class="btn btn-success">Salvar</button>
