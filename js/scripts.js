@@ -90,13 +90,14 @@ $('#attserie').on('show.bs.modal', function(event){
 
     var modal = $(this)
 
-    modal.find('#idserie')
+    
     modal.find('#nomeserie').val(nome)
     modal.find('#tempserie').val(temp)
     modal.find('#epserie').val(ep)
     modal.find('#nlinkserie').val(nlk)
     modal.find('#linkserie').val(lk)
     modal.find('#sttsserie').val(stats)
+    modal.find('#idserie').val(id)
 
 })
 

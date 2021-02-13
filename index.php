@@ -35,10 +35,6 @@
                 <a class="nav-link" id="pills-series-tab" data-toggle="pill" href="#pills-series" role="tab" aria-controls="pills-series" aria-selected="false">Séries</a>
             </li>
         </ul>
-        <form class="form-inline mr-3" action="db/pageSearch.php" method="POST" target="frame">
-            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" name="searchWord">
-            <button class="btn btn-outline-light my-2 my-sm-0" type="submit" >Search</button>
-        </form>
         <div class="btn-group" role="group">
             <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle btn-outline-light" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             Adicionar

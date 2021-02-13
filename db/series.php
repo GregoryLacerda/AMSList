@@ -61,7 +61,7 @@ foreach ($dados as $row) {
                 <span aria-hidden="true">&times;</span>
                 </button>
             </div>
-            <form class="" action="db/attseries.php" method="post" enctype="multipart/form-data">
+            <form class="" action="db/attseries.php" method="post">
                 <div class="modal-body">
                     
                     <div class="form-group">
@@ -124,7 +124,7 @@ foreach ($dados as $row) {
                 <span aria-hidden="true">&times;</span>
                 </button>
             </div>
-            <form class="" action="../db/delserie.php" method="post" enctype="multipart/form-data">
+            <form class="" action="../db/delseries.php" method="post" enctype="multipart/form-data">
                 <div class="modal-body">
 
                  

@@ -5,15 +5,15 @@ include_once("Connect.php");
 $connect = new Connect();
 $con = $connect->connect();
 
-$id = $_POST['idAnime'];
-$nome = $_POST['nomeAnime'];
-$temp = $_POST['tempAnime'];
-$epis = $_POST['epAnime'];
-$nlink = $_POST['nlinkAnime'];
-$link = $_POST['linkAnime'];
-$stats = $_POST['sttsAnime'];
+$id = $_POST['idserie'];
+$nome = $_POST['nomeserie'];
+$temp = $_POST['tempserie'];
+$epis = $_POST['epserie'];
+$nlink = $_POST['nlinkserie'];
+$link = $_POST['linkserie'];
+$stats = $_POST['sttsserie'];
 
-$sql = 'UPDATE amsdb.animes SET nome =:nome, temporada =:temp, episodio =:epis, link=:link, nlink=:nlink, stats =:stats WHERE id = :id;';
+$sql = 'UPDATE amsdb.series SET nome =:nome, temporada =:temp, episodio =:epis, link=:link, nlink=:nlink, stats =:stats WHERE id = :id;';
 
 $stmt = $con->prepare($sql);
 
