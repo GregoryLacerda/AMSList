@@ -9,7 +9,7 @@ $('#attanime').on('show.bs.modal', function (event) {
     var epi = button.data('epi') 
     var nlk = button.data('nlk') 
     var lk = button.data('lk') 
-    //var imag = button.data('imag') 
+    var imag = button.data('imag') 
     var stats = button.data('stats')
 
     var modal = $(this)
@@ -20,8 +20,8 @@ $('#attanime').on('show.bs.modal', function (event) {
     modal.find('#epAnime').val(epi)
     modal.find('#nlinkAnime').val(nlk)
     modal.find('#linkAnime').val(lk)
-    //modal.find('#imgAnime').val(imag)
-    modal.find('#sttsAnime').val(status)
+    modal.find('#linkaImg').val(imag)
+    modal.find('#sttsAnime').val(stats)
 
 })
 
@@ -41,22 +41,26 @@ $('#delanime').on('show.bs.modal', function (event) {
 
 $('#attmanga').on('show.bs.modal', function(event){
 
-    var buttonm = $(event.relatedTarget)
-    var idm = buttonm.data('idm')
-    var nomem = buttonm.data('nomem')
-    var capm = buttonm.data('capm')
-    var nlkm = buttonm.data('nlkm')
-    var lkm = buttonm.data('lkm')
-    var statsm = buttonm.data('statsm')
+    var button = $(event.relatedTarget)
+    var id = button.data('idm')
+    var nome = button.data('nomem')
+    var cap = button.data('capm')
+    var nlk = button.data('nlkm')
+    var lk = button.data('lkm')
+    var stats = button.data('statsm')
+    var imag = button.data('imagm') 
 
-    var modalm = $(this)
 
-    modalm.find('#idmanga').val(idm)
-    modalm.find('#nomemanga').val(nomem)
-    modalm.find('#capmanga').val(capm)
-    modalm.find('#nlinkmanga').val(nlkm)
-    modalm.find('#linkmanga').val(lkm)
-    modalm.find('statsmanga').val(statsm)
+    var modal = $(this)
+
+    modal.find('#idmanga').val(id)
+    modal.find('#nomemanga').val(nome)
+    modal.find('#capmanga').val(cap)
+    modal.find('#nlinkmanga').val(nlk)
+    modal.find('#linkmanga').val(lk)
+    modal.find('statsmanga').val(stats)
+    modal.find('#linkMImg').val(imag)
+
     
 })
 
@@ -87,6 +91,8 @@ $('#attserie').on('show.bs.modal', function(event){
     var nlk = button.data('nlk')
     var lk = button.data('lk')
     var stats = button.data('stats')
+    var imag = button.data('imags') 
+
 
     var modal = $(this)
 
@@ -98,6 +104,8 @@ $('#attserie').on('show.bs.modal', function(event){
     modal.find('#linkserie').val(lk)
     modal.find('#sttsserie').val(stats)
     modal.find('#idserie').val(id)
+    modal.find('#linkSImg').val(imag)
+
 
 })
 

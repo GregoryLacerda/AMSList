@@ -14,8 +14,9 @@ if ($_POST) {
     $nomeLink = $_POST['nlinkSerie'];
     $link = $_POST['linkSerie'];
     $stats = $_POST['statsSerie'];
+    $img = $_POST['linkSerieImage'];
 
-    $sql = 'INSERT INTO amsdb.series (nome, temporada, episodio, link, nlink, stats) VALUES (:nome, :temporada, :episodio, :link, :nlink, :stats);';
+    $sql = 'INSERT INTO amsdb.series (nome, temporada, episodio, link, nlink, stats, linkImg) VALUES (:nome, :temporada, :episodio, :link, :nlink, :stats, :img);';
 
     $stmt = $con->prepare($sql);
 
@@ -25,6 +26,7 @@ if ($_POST) {
     $stmt->bindValue(':link',$link);
     $stmt->bindValue(':nlink',$nomeLink);
     $stmt->bindValue(':stats',$stats);
+    $stmt->bindValue(':img',$img);
 
     $stmt->execute();
 
