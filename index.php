@@ -215,6 +215,7 @@
                                 <label for="statsManga">Status</label>
                                 <select class="form-control" id="statsManga" name="statsManga">
                                 <option>Reading</option>
+                                <option>Following</option>
                                 <option>Completed</option>
                                 <option>Plan to Read</option>
                                 <option>Dropped</option>
@@ -536,6 +537,7 @@
                             <label for="statsManga">Status</label>
                             <select class="form-control" id="statsmanga" name="sttsmanga">
                             <option value="Reading">Reading</option>
+                            <option value="Following">Following</option>
                             <option value="Completed">Completed</option>
                             <option value="Dropped">Dropped</option>
                             <option value="Plan to Read">Plan to Read</option>
