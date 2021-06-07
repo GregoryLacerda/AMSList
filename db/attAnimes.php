@@ -12,8 +12,9 @@ $epis = $_POST['epAnime'];
 $nlink = $_POST['nlinkAnime'];
 $link = $_POST['linkAnime'];
 $stats = $_POST['sttsAnime'];
+$img = $_POST['linkAImg'];
 
-$sql = 'UPDATE amsdb.animes SET nome =:nome, temporada =:temp, episodio =:epis, link=:link, nlink=:nlink, stats =:stats WHERE id = :id;';
+$sql = 'UPDATE amsdb.animes SET nome =:nome, temporada =:temp, episodio =:epis, link=:link, nlink=:nlink, stats =:stats, linkImg =:img WHERE id = :id;';
 
 $stmt = $con->prepare($sql);
 
@@ -24,6 +25,7 @@ $stmt->bindValue(':epis',$epis);
 $stmt->bindValue(':link',$link);
 $stmt->bindValue(':nlink',$nlink);
 $stmt->bindValue(':stats',$stats);
+$stmt->bindValue(':img',$img);
 
 
 $stmt->execute();

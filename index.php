@@ -346,10 +346,10 @@
                         <div class="form-group col-md-6">
                             <label for="statsAnime">Status</label>
                             <select class="form-control" id="statsAnime" name="sttsAnime">
-                            <option>Watching</option>
-                            <option>Completed</option>
-                            <option>Plan to Watch</option>
-                            <option>Dropped</option>
+                            <option value="Watching">Watching</option>
+                            <option value="Completed">Completed</option>
+                            <option value="Plan to Watch">Plan to Watch</option>
+                            <option value="Dropped">Dropped</option>
                             </select>
                         </div>
                         <div class="form-group">
@@ -444,10 +444,10 @@
                         <div class="form-group col-md-6">
                             <label for="statsserie">Status</label>
                             <select class="form-control" id="statsserie" name="sttsserie">
-                            <option>Watching</option>
-                            <option>Completed</option>
-                            <option>Plan to Watch</option>
-                            <option>Dropped</option>
+                            <option value="Watching">Watching</option>
+                            <option value="Completed">Completed</option>
+                            <option value="Plan to Watch">Plan to Watch</option>
+                            <option value="Dropped">Dropped</option>
                             </select>
                         </div>
                         <div class="form-group">
@@ -535,10 +535,10 @@
                         <div class="form-group col-md-6">
                             <label for="statsManga">Status</label>
                             <select class="form-control" id="statsmanga" name="sttsmanga">
-                            <option>Reading</option>
-                            <option>Completed</option>
-                            <option>Dropped</option>
-                            <option>Plan to Read</option>
+                            <option value="Reading">Reading</option>
+                            <option value="Completed">Completed</option>
+                            <option value="Dropped">Dropped</option>
+                            <option value="Plan to Read">Plan to Read</option>
                             </select>
                         </div>
                         <div class="form-group col-md-6">

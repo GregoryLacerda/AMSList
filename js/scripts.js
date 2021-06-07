@@ -1,4 +1,6 @@
 
+
+
 // script para passar informações para o modal de att anime
 $('#attanime').on('show.bs.modal', function (event) {
 
@@ -20,8 +22,8 @@ $('#attanime').on('show.bs.modal', function (event) {
     modal.find('#epAnime').val(epi)
     modal.find('#nlinkAnime').val(nlk)
     modal.find('#linkAnime').val(lk)
-    modal.find('#linkaImg').val(imag)
-    modal.find('#sttsAnime').val(stats)
+    modal.find('#linkAImg').val(imag)
+    modal.find('#statsAnime').val(stats)
 
 })
 
@@ -58,7 +60,7 @@ $('#attmanga').on('show.bs.modal', function(event){
     modal.find('#capmanga').val(cap)
     modal.find('#nlinkmanga').val(nlk)
     modal.find('#linkmanga').val(lk)
-    modal.find('statsmanga').val(stats)
+    modal.find('#statsmanga').val(stats)
     modal.find('#linkMImg').val(imag)
 
     
@@ -93,7 +95,6 @@ $('#attserie').on('show.bs.modal', function(event){
     var stats = button.data('stats')
     var imag = button.data('imags') 
 
-
     var modal = $(this)
 
     
@@ -102,7 +103,7 @@ $('#attserie').on('show.bs.modal', function(event){
     modal.find('#epserie').val(ep)
     modal.find('#nlinkserie').val(nlk)
     modal.find('#linkserie').val(lk)
-    modal.find('#sttsserie').val(stats)
+    modal.find('#statsserie').val(stats)
     modal.find('#idserie').val(id)
     modal.find('#linkSImg').val(imag)
 
@@ -122,3 +123,4 @@ $('#delserie').on('show.bs.modal', function(event){
     modal.find('#idserie').val(id)
 
 })
+
