@@ -19,7 +19,7 @@ Funcinalidades:<br>
  <li>Atualizar</li>
 </ul>  
 
-</h3> Portal simples, feito para Estudo. </h3>
+<h3> Portal simples, feito para Estudo. </h3>
 
 Tecnologias utilizadas:<br>
 <ul>
