@@ -133,7 +133,7 @@
 
                             <div class="form-group col-md-6">
                                 <label for="ep-anime">Episódio:</label>
-                                <input type="number" class="form-control" id="ep-anime" name="epAnime" required>                      
+                                <input type="number" class="form-control" id="ep-anime" name="epAnime" step="any" required>                      
                             </div>
                         </div>     
                         <div class="form-row">
@@ -192,7 +192,7 @@
                             </div>       
                             <div class="form-group col-md-6">
                                 <label for="cap-manga">Capitulo:</label>
-                                <input type="number" class="form-control" id="cap-manga" name="capManga" required>                      
+                                <input type="number" class="form-control" id="cap-manga" name="capManga" step="any" required>                      
                             </div>
                         </div>     
                         <div class="form-row">
@@ -256,7 +256,7 @@
 
                             <div class="form-group col-md-6">
                                 <label for="ep-serie">Episódio:</label>
-                                <input type="number" class="form-control" id="ep-serie" name="epSerie" required>                      
+                                <input type="number" class="form-control" id="ep-serie" name="epSerie" step="any" required>                      
                             </div>
                         </div>     
                         <div class="form-row">
@@ -323,7 +323,7 @@
 
                         <div class="form-group col-md-6">
                             <label for="ep-anime">Episódio:</label>
-                            <input type="number" class="form-control" id="epAnime" name="epAnime" required>                      
+                            <input type="number" class="form-control" id="epAnime" name="epAnime" step="any" required>                      
                         </div>
                     </div>     
                     <div class="form-row">
@@ -422,7 +422,7 @@
 
                         <div class="form-group col-md-6">
                             <label for="ep-serie">Episódio:</label>
-                            <input type="number" class="form-control" id="epserie" name="epserie" required>                      
+                            <input type="number" class="form-control" id="epserie" name="epserie" step="any" required>                      
                         </div>
                     </div>     
                     <div class="form-row">
@@ -514,7 +514,7 @@
                         </div>       
                         <div class="form-group col-md-6">
                             <label for="capManga">Capitulo:</label>
-                            <input type="number" class="form-control" id="capmanga" name="capmanga" required>                      
+                            <input type="number" class="form-control" id="capmanga" name="capmanga" step="any" required>                      
                         </div>
                     </div>     
                     <div class="form-row">
