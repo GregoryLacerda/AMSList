@@ -55,6 +55,7 @@
             <nav>
                 <div class="nav nav-tabs" id="nav-tab" role="tablist">
                     <a class="nav-item nav-link active" id="nav-mReading-tab" data-toggle="tab" href="#nav-mReading" role="tab" aria-controls="nav-mReading" aria-selected="true">Reading</a>
+                    <a class="nav-item nav-link" id="nav-mFollowing-tab" data-toggle="tab" href="#nav-mFollowing" role="tab" aria-controls="nav-mFollowing" aria-selected="false">Following</a>
                     <a class="nav-item nav-link" id="nav-mCompleted-tab" data-toggle="tab" href="#nav-mCompleted" role="tab" aria-controls="nav-mCompleted" aria-selected="false">Completed</a>
                     <a class="nav-item nav-link" id="nav-mPlanRead-tab" data-toggle="tab" href="#nav-mPlanRead" role="tab" aria-controls="nav-mPlanRead" aria-selected="false">Plan to Read</a>
                     <a class="nav-item nav-link" id="nav-mDropped-tab" data-toggle="tab" href="#nav-mDropped" role="tab" aria-controls="nav-mDropped" aria-selected="false">Dropped</a>
@@ -62,6 +63,7 @@
             </nav>
             <div class="tab-content" id="nav-tabContent">
                 <div class="tab-pane fade show active" id="nav-mReading" role="tabpanel" aria-labelledby="nav-mReading-tab"><?php include_once('db/mangas.php'); getMangas('Reading');?></div>
+                <div class="tab-pane fade" id="nav-mFollowing" role="tabpanel" aria-labelledby="nav-mFollowing-tab"><?php getMangas('Following');?></div>
                 <div class="tab-pane fade" id="nav-mCompleted" role="tabpanel" aria-labelledby="nav-mCompleted-tab"><?php getMangas('Completed');?></div>
                 <div class="tab-pane fade" id="nav-mPlanRead" role="tabpanel" aria-labelledby="nav-mPlanRead-tab"><?php getMangas('Plan to Read');?></div>
                 <div class="tab-pane fade" id="nav-mDropped" role="tabpanel" aria-labelledby="nav-mDropped-tab"><?php getMangas('Dropped');?></div>
