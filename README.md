@@ -1,6 +1,6 @@
-AMSList
+<h1>AMSList</h1>
 
-É um portal para guardar e centralizar as informações de episodios ou capitulos dos seus Animes, Mangas e series.
+<h3>É um portal para guardar e centralizar as informações de episodios ou capitulos dos seus Animes, Mangas e series.</h3>
 
 Funcinalidades:<br>
 
@@ -19,7 +19,7 @@ Funcinalidades:<br>
  <li>Atualizar</li>
 </ul>  
 
-Portal simples, feito para Estudo.
+</h3> Portal simples, feito para Estudo. </h3>
 
 Tecnologias utilizadas:<br>
 <ul>
