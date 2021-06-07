@@ -17,11 +17,16 @@ Funcinalidades:<br>
   </li>
  <li>Remover</li>
  <li>Atualizar</li>
-  
+</ul>  
+
 Portal simples, feito para Estudo.
 
-Tecnologias utilizadas:
+Tecnologias utilizadas:<br>
+<ul>
+  <li> Bootstrap</li>
+  <li>Jquery</li>
+  <li>PHP</li>
+</ul> 
 
-Bootstrap
-Jquery
-PHP
+
+
