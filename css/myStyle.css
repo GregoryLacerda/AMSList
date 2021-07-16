@@ -12,3 +12,7 @@
   .nav-pills > li >a {
     color:black !important;
   }
+
+  .card-title{
+    min-width: 239px;
+  }

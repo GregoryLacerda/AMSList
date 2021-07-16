@@ -31,7 +31,7 @@ function getSeries($stats){
                     </a>
                     <a href="#" class="float-right" data-toggle="modal" data-target="#delserie" data-id="'.$row['id'].'"><img style="margin-top:5px" src="../img/delete.png" alt="Apagar" width=24 heght=24></a>
                     <div class="card-body">
-                        <h5 class="card-title">'.$row['nome'].'</h5>
+                        <h6 class="card-title">'.$row['nome'].'</h6>
                         <hr>
                         <div class="card-text"><b>Temporada:</b> '.$row['temporada'].' <b>Episódio:</b> '.$row['episodio'].'</div>
                         <a href="'.$row['link'].'" class="card-link" target="blank">'.$row['nlink'].'</a>

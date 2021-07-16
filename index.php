@@ -278,7 +278,7 @@
                             <div class="form-group col-md-6">
                                     <label for="statsSerie">Status</label>
                                     <select class="form-control" id="statsSerie" name="statsSerie">
-                                    <option>Reading</option>
+                                    <option>Watching</option>
                                     <option>Completed</option>
                                     <option>Plan to Watch</option>
                                     <option>Dropped</option>

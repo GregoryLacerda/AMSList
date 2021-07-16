@@ -28,12 +28,12 @@ function getAnime($stats){
                 
                 </div>
                 <div class="col-md-8">
-                    <a href="#" class="float-right" data-toggle="modal" data-target="#attanime" data-id="'.$row['id'].'" data-nome="'.$row['nome'].'" data-temp="'.$row['temporada'].'" data-epi="'.$row['episodio'].'" data-nlk="'.$row['nlink'].'" data-lk="'.$row['link'].'" data-imag="img/'.$row['nome'].'.jpg" data-stats="'.$row['stats'].'" data-imag="'.$row['stats'].'">               
+                    <a href="#" class="float-right" data-toggle="modal" data-target="#attanime" data-id="'.$row['id'].'" data-nome="'.$row['nome'].'" data-temp="'.$row['temporada'].'" data-epi="'.$row['episodio'].'" data-nlk="'.$row['nlink'].'" data-lk="'.$row['link'].'" data-imag="'.$row['linkImg'].'" data-stats="'.$row['stats'].'" data-imag="'.$row['stats'].'">               
                         <img src="../img/editicon.png" alt="Atualizar">
                     </a>
                     <a href="#" class="float-right" data-toggle="modal" data-target="#delanime" data-id="'.$row['id'].'"><img style="margin-top:5px" src="../img/delete.png" alt="Apagar" width=24 heght=24></a>
                     <div class="card-body">
-                        <h5 class="card-title">'.$row['nome'].'</h5>
+                        <h6 class="card-title">'.$row['nome'].'</h6>
                         <hr>
                         <div class="card-text"><b>Temporada:</b> '.$row['temporada'].' <b>Episódio:</b> '.$row['episodio'].'</div>
                         <a href="'.$row['link'].'" class="card-link" target="blank">'.$row['nlink'].'</a>
