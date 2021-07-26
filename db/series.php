@@ -17,12 +17,12 @@ function getSeries($stats){
 
     foreach ($dados as $row) {
 
-        $nome = preg_replace( array( '/[ ]/' , '/[^A-Za-z0-9\-]/' ) , array( '' , '' ) , $row['nome']);
+        /*$nome = preg_replace( array( '/[ ]/' , '/[^A-Za-z0-9\-]/' ) , array( '' , '' ) , $row['nome']);*/
         echo'
         <div class="card mt-3 ml-3 mb-3 d-inline-block" style="max-width: 420px;">
             <div class="row no-gutters">
                 <div class="col-md-4">
-                    <img src="../img/series/'. $nome .'.jpg" class="card-img" alt="" width="140px" height="200px">
+                    <img src="'.$row['linkImg'].'" class="card-img" alt="" width="140px" height="200px">
                 
                 </div>
                 <div class="col-md-8">
