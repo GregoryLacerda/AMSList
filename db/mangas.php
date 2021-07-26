@@ -7,7 +7,7 @@ function getMangas($stats){
     $connect = new Connect();
     $con = $connect->connect();
 
-    $sql = 'SELECT * FROM amsdb.mangas WHERE stats = :stats;';
+    $sql = 'SELECT * FROM amsdb.mangas WHERE stats = :stats ORDER BY data_atualizacao DESC;';
 
     $stmt = $con->prepare($sql);
     $stmt->bindValue(':stats',$stats);

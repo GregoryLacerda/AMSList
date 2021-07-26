@@ -6,7 +6,7 @@ function getSeries($stats){
     $connect = new Connect();
     $con = $connect->connect();
 
-    $sql = 'SELECT * FROM amsdb.series WHERE stats = :stats;';
+    $sql = 'SELECT * FROM amsdb.series WHERE stats = :stats ORDER BY data_atualizacao DESC;';
 
     $stmt = $con->prepare($sql);
     $stmt->bindValue(':stats',$stats);

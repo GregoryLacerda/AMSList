@@ -6,7 +6,7 @@ function getAnime($stats){
     $connect = new Connect();
     $con = $connect->connect();
 
-    $sql = 'SELECT * FROM amsdb.animes WHERE stats = :stats;';
+    $sql = 'SELECT * FROM amsdb.animes WHERE stats = :stats ORDER BY data_atualizacao DESC;';
 
     $stmt = $con->prepare($sql);
 
